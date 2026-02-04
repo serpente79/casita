@@ -1,92 +1,116 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Guías locales útiles – CDMX</title>
-
-  <meta name="description" content="Guías locales con datos poco conocidos sobre movilidad, choques y situaciones reales en avenidas de la CDMX. Información práctica, sin alarmismo.">
-
-  <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #fafafa;
-      color: #222;
-      max-width: 720px;
-      margin: auto;
-      padding: 16px;
-      line-height: 1.6;
-    }
-    h1 {
-      font-size: 1.6rem;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-    footer {
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #555;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casita Nodos</title>
+<meta name="description" content="Casita de nodos del App-Verso. Lecturas breves para ver distinto.">
+<style>
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont;
+  background:#fafafa;
+  color:#222;
+  line-height:1.6;
+}
+main{
+  max-width:880px;
+  margin:auto;
+  padding:3rem 1.5rem;
+}
+header{
+  text-align:center;
+  margin-bottom:3rem;
+}
+h1{
+  font-size:2.4rem;
+  margin-bottom:.5rem;
+}
+.tagline{
+  color:#555;
+  font-size:1.1rem;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:1.5rem;
+  margin-top:3rem;
+}
+.card{
+  background:#fff;
+  border:1px solid #ddd;
+  padding:1.5rem;
+  text-decoration:none;
+  color:#222;
+  transition:.15s ease;
+}
+.card:hover{
+  transform:translateY(-2px);
+  border-color:#aaa;
+}
+.card h2{
+  margin:0 0 .5rem 0;
+  font-size:1.2rem;
+}
+.card p{
+  margin:0;
+  color:#555;
+  font-size:.95rem;
+}
+footer{
+  margin-top:5rem;
+  text-align:center;
+  font-size:.9rem;
+  color:#666;
+}
+</style>
 </head>
 
 <body>
+<main>
 
-<h1>Guías locales útiles (CDMX)</h1>
+<header>
+  <!-- aquí luego pondremos la imagen -->
+  <h1>Casita Nodos</h1>
+  <p class="tagline">
+    Micro-lecturas del App-Verso.<br>
+    No para convencerte. Para que veas.
+  </p>
+</header>
 
-<p>
-Este sitio reúne <strong>mini guías locales</strong> con información práctica
-sobre movilidad, choques leves y situaciones reales en avenidas de la Ciudad de México.
-</p>
+<section class="grid">
 
-<p>
-No son noticias, ni anuncios, ni alarmas.  
-Son datos que casi nadie explica, pero que sirven cuando los necesitas.
-</p>
+<a class="card" href="ace.html">
+  <h2>💸 Anti-ceguera económica</h2>
+  <p>Gastos invisibles, fricción y decisiones pequeñas que sí importan.</p>
+</a>
 
-<h2>Guías publicadas</h2>
-<ul>
-  <li>
-    <a href="https://choque-fuga-eduardo-molina.vercel.app/">
-      Si te chocan y se dan a la fuga en Eduardo Molina
-    </a>
-  </li>
-  <li>
-    <a href="https://motos-eduardo-molina.vercel.app/">
-      Por qué manejar con motos aquí requiere otro chip
-    </a>
-  </li>
-  <li>
-    <a href="https://choque-raro-e-molina.vercel.app/">
-      Choques que no ocurren donde el coche se detiene
-    </a>
-  </li>
-  <li>
-    <a href="https://miniweb-descuidos.vercel.app/">
-      El descuido silencioso que casi nadie nota
-    </a>
-  </li>
-  <li>
-    <a href="https://receta-desastre.vercel.app/">
-      Recetas para cuando todo salió mal
-    </a>
-  </li>
-  <li>
-    <a href="https://satisfaccion-silenciosa.vercel.app/">
-      Qué es la satisfacción silenciosa
-    </a>
-  </li>
-</ul>
+<a class="card" href="acumulacion.html">
+  <h2>🧹 Acumulación & descuidos</h2>
+  <p>Objetos, hábitos y cosas que ocupan más de lo que parece.</p>
+</a>
 
+<a class="card" href="cuerpo-mente.html">
+  <h2>🧠 Cuerpo y mente</h2>
+  <p>Cansancio, atención, desgaste silencioso.</p>
+</a>
+
+<a class="card" href="eventos.html">
+  <h2>🧾 Eventos y relatos</h2>
+  <p>Hechos reales, choques, errores y aprendizaje.</p>
+</a>
+
+<a class="card" href="meds.html">
+  <h2>🩺 Bitácoras corporales</h2>
+  <p>Herramientas para observar antes de diagnosticar.</p>
+</a>
+
+</section>
 
 <footer>
-<p>
-Contenido informativo.  
-No sustituye asesoría legal ni reglamentos oficiales.
-</p>
+  <p>App-Verso · presencia antes que ruido</p>
 </footer>
 
+</main>
 </body>
 </html>
