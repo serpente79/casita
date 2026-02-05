@@ -4,64 +4,99 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Casita Nodos</title>
-<meta name="description" content="Casita de nodos del App-Verso. Lecturas breves para ver distinto.">
+<meta name="description" content="Micro-lecturas conectadas. No para convencerte. Para que veas.">
+
 <style>
+:root{
+  --bg:#fafafa;
+  --fg:#222;
+  --muted:#666;
+  --card:#ffffff;
+  --border:#ddd;
+}
+
+*{box-sizing:border-box}
+
 body{
   margin:0;
-  font-family:system-ui,-apple-system,BlinkMacSystemFont;
-  background:#fafafa;
-  color:#222;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
+  background:var(--bg);
+  color:var(--fg);
   line-height:1.6;
 }
+
 main{
-  max-width:880px;
+  max-width:960px;
   margin:auto;
-  padding:3rem 1.5rem;
+  padding:3rem 1.5rem 4rem;
 }
+
 header{
   text-align:center;
-  margin-bottom:3rem;
+  margin-bottom:3.5rem;
 }
+
+header img{
+  width:120px;
+  margin-bottom:1.5rem;
+  image-rendering:crisp-edges;
+}
+
 h1{
   font-size:2.4rem;
-  margin-bottom:.5rem;
+  margin:0 0 .5rem;
+  font-weight:600;
 }
+
 .tagline{
-  color:#555;
-  font-size:1.1rem;
+  font-size:1.15rem;
+  color:var(--fg);
 }
+
+.subtle{
+  margin-top:.6rem;
+  font-size:.95rem;
+  color:var(--muted);
+}
+
 .grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
   gap:1.5rem;
-  margin-top:3rem;
 }
+
 .card{
-  background:#fff;
-  border:1px solid #ddd;
+  display:block;
+  background:var(--card);
+  border:1px solid var(--border);
   padding:1.5rem;
   text-decoration:none;
-  color:#222;
-  transition:.15s ease;
+  color:var(--fg);
+  transition:transform .15s ease, border-color .15s ease;
 }
+
 .card:hover{
   transform:translateY(-2px);
   border-color:#aaa;
 }
+
 .card h2{
-  margin:0 0 .5rem 0;
+  margin:0 0 .5rem;
   font-size:1.2rem;
+  font-weight:600;
 }
+
 .card p{
   margin:0;
-  color:#555;
   font-size:.95rem;
+  color:var(--muted);
 }
+
 footer{
   margin-top:5rem;
   text-align:center;
-  font-size:.9rem;
-  color:#666;
+  font-size:.85rem;
+  color:var(--muted);
 }
 </style>
 </head>
@@ -69,57 +104,52 @@ footer{
 <body>
 <main>
 
-  <header>
-  <img 
-    src="c3-cuadro.png" 
-    alt="C3 - símbolo del App-Verso"
-    style="
-      width:120px;
-      margin-bottom:1.5rem;
-      image-rendering: crisp-edges;
-    "
-  >
+<header>
+  <img src="c3-cuadro.png" alt="C3">
 
   <h1>Casita Nodos</h1>
 
   <p class="tagline">
-    Micro-lecturas del App-Verso.<br>
+    Micro-lecturas conectadas.<br>
     No para convencerte. Para que veas.
+  </p>
+
+  <p class="subtle">
+    Entra, mira un nodo, sal cuando quieras.
   </p>
 </header>
 
-
 <section class="grid">
 
-<a class="card" href="ace.html">
-  <h2>💸 Anti-ceguera económica</h2>
-  <p>Gastos invisibles, fricción y decisiones pequeñas que sí importan.</p>
-</a>
+  <a class="card" href="ace.html">
+    <h2>💸 Anti-ceguera económica</h2>
+    <p>Gastos invisibles, fricción y decisiones pequeñas que sí importan.</p>
+  </a>
 
-<a class="card" href="acumulacion.html">
-  <h2>🧹 Acumulación & descuidos</h2>
-  <p>Objetos, hábitos y cosas que ocupan más de lo que parece.</p>
-</a>
+  <a class="card" href="acumulacion.html">
+    <h2>🧹 Acumulación & descuidos</h2>
+    <p>Objetos, hábitos y cosas que ocupan más de lo que parece.</p>
+  </a>
 
-<a class="card" href="cuerpo-mente.html">
-  <h2>🧠 Cuerpo y mente</h2>
-  <p>Cansancio, atención, desgaste silencioso.</p>
-</a>
+  <a class="card" href="cuerpo-mente.html">
+    <h2>🧠 Cuerpo y mente</h2>
+    <p>Cansancio, atención y desgaste silencioso.</p>
+  </a>
 
-<a class="card" href="eventos.html">
-  <h2>🧾 Eventos y relatos</h2>
-  <p>Hechos reales, choques, errores y aprendizaje.</p>
-</a>
+  <a class="card" href="eventos.html">
+    <h2>🧾 Eventos y relatos</h2>
+    <p>Hechos reales, errores, choques y aprendizaje.</p>
+  </a>
 
-<a class="card" href="meds.html">
-  <h2>🩺 Bitácoras corporales</h2>
-  <p>Herramientas para observar antes de diagnosticar.</p>
-</a>
+  <a class="card" href="meds.html">
+    <h2>🩺 Bitácoras corporales</h2>
+    <p>Herramientas para observar antes de diagnosticar.</p>
+  </a>
 
 </section>
 
 <footer>
-  <p>App-Verso · presencia antes que ruido</p>
+  App-Verso · presencia antes que ruido
 </footer>
 
 </main>
